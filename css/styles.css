@@ -1,19 +1,21 @@
 body {
   color: #333;
   font-family: Verdana, sans-serif;
-  margin: 0;
+  margin: 0 auto;
 }
 
 header {
   background-color: #e5fae5;
-  padding: 32px 0;
+  padding: 32px 10px;
+  margin: 0;
 }
 
 .container {
-  width: 440px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .icon img {
@@ -27,6 +29,7 @@ header {
 
 .info {
   margin-left: 32px;
+  display: block;
 }
 
 .info h1 {
@@ -40,8 +43,9 @@ header {
 }
 
 main {
-  width: 400px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .profile > h1, .works > h1 {
@@ -53,6 +57,11 @@ main {
 
 .material-icons {
   vertical-align: -3px;
+}
+
+.profile > ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .profile > ul > li {
@@ -67,9 +76,9 @@ main {
   border-width: 1px;
   border-style: solid;
   border-color: #333;
-  width: 400px;
-  height: 260px;
+  width: 100%;
   transition: all 0.5s;
+  box-sizing: border-box;
 }
 
 .works > section > a > img:hover {
@@ -88,4 +97,11 @@ main {
 .github {
   display: block;
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 550px;
+    margin: 0 auto;
+  }
 }
